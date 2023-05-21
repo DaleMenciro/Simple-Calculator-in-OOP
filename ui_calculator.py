@@ -44,7 +44,7 @@ class CalculatorApp(tk.Tk):
         self.division_radio.grid(row=4, column=0)
 
     
-    def calculate(self):
+    #def calculate(self):
 
 app = CalculatorApp()
 app.mainloop()
