@@ -54,6 +54,8 @@ class CalculatorApp(tk.Tk):
 
         self.num2_entry = tk.Entry(self)
         self.num2_entry.grid(row=3, column=1)
+
+        
     
     #def calculate(self):
 
