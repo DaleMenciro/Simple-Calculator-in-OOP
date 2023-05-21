@@ -27,7 +27,7 @@ class CalculatorApp(tk.Tk):
         self.operation_var = tk.StringVar(value="Addition")
         self.create_widgets()
 
-    def create_widgets(self)
+    def create_widgets(self):
         self.operation_label = tk.Label(self, text="Select operation:")
         self.operation_label.grid(row=0, column=0)
 
