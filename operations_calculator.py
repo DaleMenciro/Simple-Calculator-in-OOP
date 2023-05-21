@@ -21,3 +21,12 @@ class Operation:
         return first_number / second_number
     
     def calculate(self, operation, first_number, second_number)
+        try:
+            if operation == "Addition":
+                return self.add(first_number, second_number)
+            elif operation == "Subtraction":
+                return self.subtract(first_number, second_number)
+            elif operation == "Multiplication":
+                return self.multiply(first_number, second_number)
+            elif operation == "Division":
+                return self.divide(first_number, second_number)
