@@ -6,10 +6,14 @@ This file is for the operation methods
 #create class
 class Operation:
 #create methods for operations
-    def add(self):
+    def add(self, first_number, second_number):
+        return first_number + second_number
     
-    def subtract(self):
+    def subtract(self, first_number, second_number):
+        return first_number - second_number
 
-    def multiply(self):
-
-    def divide(self):
+    def multiply(self, first_number, second_number):
+        return first_number * second_number
+    
+    def divide(self, first_number, second_number):
+        return first_number / second_number
