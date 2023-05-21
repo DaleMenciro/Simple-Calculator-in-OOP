@@ -98,5 +98,3 @@ class CalculatorApp(tk.Tk):
     def exit_program(self):
         self.destroy()
         messagebox.showinfo("Message", "Thank you for using the program!")
-app = CalculatorApp()
-app.mainloop()
