@@ -6,3 +6,5 @@ This file is for calling the operation file and creating GUI
 import tkinter as tk
 from tkinter import messagebox
 from operations_calculator import Operation
+
+class CalculatorApp(tk.Tk):
