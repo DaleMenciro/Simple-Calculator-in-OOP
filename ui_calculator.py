@@ -48,6 +48,12 @@ class CalculatorApp(tk.Tk):
 
         self.num1_entry = tk.Entry(self)
         self.num1_entry.grid(row=1, column=1)
+
+        self.num2_label = tk.Label(self, text="Enter second number:")
+        self.num2_label.grid(row=2, column=1)
+
+        self.num2_entry = tk.Entry(self)
+        self.num2_entry.grid(row=3, column=1)
     
     #def calculate(self):
 
