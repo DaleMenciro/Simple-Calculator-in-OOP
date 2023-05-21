@@ -77,5 +77,11 @@ class CalculatorApp(tk.Tk):
             num2 = float(self.num2_entry.get())
 
             operation = self.operation_var.get()
+    
+    def clear(self):
+    
+    def try_again(self):
+    
+    def exit_program(self):
 app = CalculatorApp()
 app.mainloop()
