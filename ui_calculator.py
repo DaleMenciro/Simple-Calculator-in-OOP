@@ -62,7 +62,7 @@ class CalculatorApp(tk.Tk):
         self.result_label = tk.Label(self, text="Result:")
         self.result_label.grid(row=5, column=1, sticky="NSEW")
 
-        self.clear_button = tk.Button(self, text="Clear", command=self.clear)
+        self.clear_button = tk.Button(self, text="Clear", command=self)
         self.clear_button.grid(row=6, column=0, sticky="NSEW")
 
         self.try_again_button = tk.Button(self, text="Try Again", command=self)
@@ -71,8 +71,9 @@ class CalculatorApp(tk.Tk):
         self.exit_button = tk.Button(self, text="Exit", command=self)
         self.exit_button.grid(row=6, column=2, sticky="NSEW")
 
-    
-    #def calculate(self):
-
+    def calculate(self):
+        try:
+            num1 = float(self.num1_entry.get())
+            num2 = float(self.num2_entry.get())
 app = CalculatorApp()
 app.mainloop()
