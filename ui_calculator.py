@@ -31,7 +31,20 @@ class CalculatorApp(tk.Tk):
         self.operation_label = tk.Label(self, text="Select operation:")
         self.operation_label.grid(row=0, column=0)
 
+        self.addition_radio = tk.Radiobutton(self, text="Addition", variable=self.operation_var, value="Addition")
+        self.addition_radio.grid(row=1, column=0)
+
+        self.subtraction_radio = tk.Radiobutton(self, text="Subtraction", variable=self.operation_var, value="Subtraction")
+        self.subtraction_radio.grid(row=2, column=0)
+
+        self.multiplication_radio = tk.Radiobutton(self, text="Multiplication", variable=self.operation_var, value="Multiplication") 
+        self.multiplication_radio.grid(row=3, column=0)
+
+        self.division_radio = tk.Radiobutton(self, text="Division", variable=self.operation_var, value="Division")
+        self.division_radio.grid(row=4, column=0)
+
     
-    def calculate(self)
+    def calculate(self):
+
 app = CalculatorApp()
 app.mainloop()
