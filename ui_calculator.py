@@ -22,6 +22,8 @@ class CalculatorApp(tk.Tk):
         self.rowconfigure(5, weight=1)
         self.rowconfigure(6, weight=1)
 
+        self.calculator = Operation()
+
 
 app = CalculatorApp()
 app.mainloop()
