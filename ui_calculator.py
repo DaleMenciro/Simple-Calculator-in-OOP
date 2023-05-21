@@ -77,6 +77,8 @@ class CalculatorApp(tk.Tk):
             num2 = float(self.num2_entry.get())
 
             operation = self.operation_var.get()
+
+            result = self.calculator.calculate()
     
     def clear(self):
         self.num1_entry.delete(0,tk.END)
