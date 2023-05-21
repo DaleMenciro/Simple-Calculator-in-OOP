@@ -78,7 +78,8 @@ class CalculatorApp(tk.Tk):
 
             operation = self.operation_var.get()
 
-            result = self.calculator.calculate()
+            result = self.calculator.calculate(operation, num1, num2)
+            
     
     def clear(self):
         self.num1_entry.delete(0,tk.END)
