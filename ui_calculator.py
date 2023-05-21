@@ -82,7 +82,10 @@ class CalculatorApp(tk.Tk):
         self.num1_entry.delete(0,tk.END)
         self.num2_entry.delete(0, tk.END)
         self.result_label.config(text="Result: ")
+
     def try_again(self):
+        self.clear()
+        messagebox.showinfo("Try Again", "Please enter new values and Operation")
     
     def exit_program(self):
 app = CalculatorApp()
