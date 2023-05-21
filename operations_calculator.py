@@ -4,5 +4,5 @@ This file is for the operation methods
 '''
 
 #create class
-
+class Operation:
 #create methods for operations
