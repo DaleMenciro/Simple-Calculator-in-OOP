@@ -8,3 +8,6 @@ from tkinter import messagebox
 from operations_calculator import Operation
 
 class CalculatorApp(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        
