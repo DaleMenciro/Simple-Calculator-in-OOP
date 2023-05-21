@@ -20,4 +20,4 @@ class Operation:
             raise ZeroDivisionError("Cannot divide by zero!")
         return first_number / second_number
     
-    def calculate(self)
+    def calculate(self, operation, first_number, second_number)
