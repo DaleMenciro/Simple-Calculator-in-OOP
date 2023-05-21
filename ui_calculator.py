@@ -42,7 +42,12 @@ class CalculatorApp(tk.Tk):
 
         self.division_radio = tk.Radiobutton(self, text="Division", variable=self.operation_var, value="Division")
         self.division_radio.grid(row=4, column=0)
+    
+        self.num1_label = tk.Label(self, text="Enter first number:")
+        self.num1_label.grid(row=0, column=1)
 
+        self.num1_entry = tk.Entry(self)
+        self.num1_entry.grid(row=1, column=1)
     
     #def calculate(self):
 
