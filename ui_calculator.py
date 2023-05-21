@@ -24,6 +24,8 @@ class CalculatorApp(tk.Tk):
 
         self.calculator = Operation()
 
+        self.operation_var = tk.StringVar(value="Addition")
+        self.create_widgets()
 
 app = CalculatorApp()
 app.mainloop()
