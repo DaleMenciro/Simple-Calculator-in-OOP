@@ -79,7 +79,9 @@ class CalculatorApp(tk.Tk):
             operation = self.operation_var.get()
     
     def clear(self):
-    
+        self.num1_entry.delete(0,tk.END)
+        self.num2_entry.delete(0, tk.END)
+        self.result_label.config(text="Result: ")
     def try_again(self):
     
     def exit_program(self):
