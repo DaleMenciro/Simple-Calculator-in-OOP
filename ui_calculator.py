@@ -56,19 +56,19 @@ class CalculatorApp(tk.Tk):
         self.num2_entry.grid(row=3, column=1)
 
         #Calculate, Result, Clear, Try Again, and Exit button
-        self.calculate_button = tk.Button(self, text="Calculate", command=self)
+        self.calculate_button = tk.Button(self, text="Calculate", command=self.calculate)
         self.calculate_button.grid(row=4, column=1, sticky="NSEW")
 
         self.result_label = tk.Label(self, text="Result:")
         self.result_label.grid(row=5, column=1, sticky="NSEW")
 
-        self.clear_button = tk.Button(self, text="Clear", command=self)
+        self.clear_button = tk.Button(self, text="Clear", command=self.clear)
         self.clear_button.grid(row=6, column=0, sticky="NSEW")
 
-        self.try_again_button = tk.Button(self, text="Try Again", command=self)
+        self.try_again_button = tk.Button(self, text="Try Again", command=self.try_again)
         self.try_again_button.grid(row=6, column=1, sticky="NSEW")
 
-        self.exit_button = tk.Button(self, text="Exit", command=self)
+        self.exit_button = tk.Button(self, text="Exit", command=self.exit_program)
         self.exit_button.grid(row=6, column=2, sticky="NSEW")
 
     def calculate(self):
