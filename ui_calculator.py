@@ -28,5 +28,7 @@ class CalculatorApp(tk.Tk):
         self.create_widgets()
 
     def create_widgets(self)
+    
+    def calculate(self)
 app = CalculatorApp()
 app.mainloop()
