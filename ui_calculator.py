@@ -81,7 +81,11 @@ class CalculatorApp(tk.Tk):
             result = self.calculator.calculate(operation, num1, num2)
 
             self.result_label.config(text=f"Result: {result}")
-    
+        except ValueError: 
+            messagebox.showerror("Error", "Invalid input! Please enter a valid number.")
+        except ZeroDivisionError as e:
+            messagebox.showerror("Error", e)
+
     def clear(self):
         self.num1_entry.delete(0,tk.END)
         self.num2_entry.delete(0, tk.END)
