@@ -6,6 +6,7 @@ This file is for calling the operation file and creating GUI
 import tkinter as tk
 from tkinter import messagebox
 from operations_calculator import Operation
+from additional_operations_calculator import AdditionalOperation
 
 class CalculatorApp(tk.Tk):
     def __init__(self):
@@ -42,6 +43,18 @@ class CalculatorApp(tk.Tk):
 
         self.division_radio = tk.Radiobutton(self, text="Division", variable=self.operation_var, value="Division")
         self.division_radio.grid(row=4, column=0)
+
+        self.square_button = tk.Radiobutton(self, text="Square", variable=self.operation_var, value="Square")
+        self.square_button.grid(row=5, column=0)
+
+        self.cube_button = tk.Radiobutton(self, text="Cube", variable=self.operation_var, value="Cube")
+        self.cube_button.grid(row=6, column=0)
+
+        self.square_root_button = tk.Radiobutton(self, text="Square Root", variable=self.operation_var, value="Square Root")
+        self.square_root_button.grid(row=7, column=0)
+
+        self.cube_root_button = tk.Radiobutton(self, text="Cube Root", variable=self.operation_var, value="Cube Root")
+        self.cube_root_button.grid(row=8, column=0)
     
         self.num1_label = tk.Label(self, text="Enter first number:")
         self.num1_label.grid(row=0, column=1)
