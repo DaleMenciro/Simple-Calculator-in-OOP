@@ -1,6 +1,10 @@
 '''
 This file is for calling the operation file and creating GUI
 (addition, subtraction, multiplication, and division)
+
+With inheritance, the methods within AdditionalOperation class will be added to the program.
+(Square, Cube, Square Root, and Cube Root)
+Only the number on firs number will be calculated if the user prompt the said operations.
 '''
 
 import tkinter as tk
