@@ -8,3 +8,4 @@ power, and sin.
 
 '''
 
+import math
