@@ -23,7 +23,8 @@ class AdditionalOperation:
     def square_root(self, number):
         return math.sqrt(number)
         
-    def cube_root()
+    def cube_root(self,number):
+        return math.cbrt(number)
         
     def power()
         
