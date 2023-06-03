@@ -103,7 +103,15 @@ class CalculatorApp(tk.Tk):
                 result = self.calculator.multiply(num1, num2)
             elif operation == "Division":
                 result = self.calculator.divide(num1, num2)
-            elif operation == "Square":
+            
+            self.result_label.config(text=f"Result: {result: .2f}")
+        except ValueError: 
+            messagebox.showerror("Error", "Invalid input! Please enter a valid number.")
+        except ZeroDivisionError as e:
+            messagebox.showerror("Error", e)               
+
+    def calculate_first_number (self, operation, num1):
+            if operation == "Square":
                 result = self.additional_operations.square(num1)
             elif operation == "Cube":
                 result = self.additional_operations.cube(num1)
@@ -113,10 +121,7 @@ class CalculatorApp(tk.Tk):
                 result = self.additional_operations.cube_root(num1)
 
             self.result_label.config(text=f"Result: {result: .2f}")
-        except ValueError: 
-            messagebox.showerror("Error", "Invalid input! Please enter a valid number.")
-        except ZeroDivisionError as e:
-            messagebox.showerror("Error", e)
+
 
     def clear(self):
         self.num1_entry.delete(0,tk.END)
