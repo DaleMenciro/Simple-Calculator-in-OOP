@@ -111,7 +111,7 @@ class CalculatorApp(tk.Tk):
             elif operation == "Cube Root":
                 result = self.additional_operations.cube_root(num1)
 
-            self.result_label.config(text=f"Result: {result: 2f}")
+            self.result_label.config(text=f"Result: {result: .2f}")
         except ValueError: 
             messagebox.showerror("Error", "Invalid input! Please enter a valid number.")
         except ZeroDivisionError as e:
