@@ -94,7 +94,7 @@ class CalculatorApp(tk.Tk):
 
             operation = self.operation_var.get()
 
-            result = self.calculator.calculate(operation, num1, num2)
+            
 
             self.result_label.config(text=f"Result: {result}")
         except ValueError: 
