@@ -25,7 +25,7 @@ class AdditionalOperation(Operation):
         return math.sqrt(number)
         
     def cube_root(self,number):
-        return math.cbrt(number)
+        return math.pow(number, 1/3)
         
     def power(self, base, exponent):
         return math.pow(base,exponent)
