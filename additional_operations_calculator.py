@@ -3,8 +3,7 @@ This file inherits from the Operation class
 from operations_calculator.py file
 
 This file adds additional operation methods
-such as: square, cube, square root, cube root,
-power, and sin.
+such as: square, cube, square root, and cube root.
 
 '''
 
@@ -26,9 +25,3 @@ class AdditionalOperation(Operation):
         
     def cube_root(self,number):
         return math.pow(number, 1/3)
-        
-    def power(self, base, exponent):
-        return math.pow(base,exponent)
-        
-    def sin(self, angle):
-        return math.sin(math.radians(angle))
