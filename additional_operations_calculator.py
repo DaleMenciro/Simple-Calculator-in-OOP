@@ -20,7 +20,8 @@ class AdditionalOperation:
     def cube(self, number):
         return number ** 3
         
-    def square_root()
+    def square_root(self, number):
+        return math.sqrt(number)
         
     def cube_root()
         
