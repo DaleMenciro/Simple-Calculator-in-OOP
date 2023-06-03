@@ -9,3 +9,5 @@ power, and sin.
 '''
 
 import math
+
+class AdditionalOperation:
