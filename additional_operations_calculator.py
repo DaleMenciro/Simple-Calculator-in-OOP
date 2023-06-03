@@ -26,7 +26,8 @@ class AdditionalOperation:
     def cube_root(self,number):
         return math.cbrt(number)
         
-    def power()
+    def power(self, base, exponent):
+        return math.pow(base,exponent)
         
     def sin()
         
