@@ -26,6 +26,7 @@ class CalculatorApp(tk.Tk):
         self.rowconfigure(8, weight=1)
 
         self.calculator = Operation()
+        self.additional_operations = AdditionalOperation()
 
         self.operation_var = tk.StringVar(value="Addition")
         self.create_widgets()
