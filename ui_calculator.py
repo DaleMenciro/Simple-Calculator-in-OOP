@@ -89,11 +89,13 @@ class CalculatorApp(tk.Tk):
         self.exit_button.grid(row=9, column=2, sticky="NSEW")
 
     def calculate(self):
-        try:
-            num1 = float(self.num1_entry.get())
-            num2 = float(self.num2_entry.get())
+        operation = self.operation_var.get()
+        num1 = float(self.num1_entry.get())
 
-            operation = self.operation_var.get()
+        if operation in ["Square", "Cube", "Square Root", "Cube Root"]:
+            self.calculate_first_number(operation, num1)
+        try:
+            num2 = float(self.num2_entry.get())
 
             if operation == "Addition":
                 result = self.calculator.add(num1, num2)
