@@ -13,3 +13,15 @@ import math
 class AdditionalOperation:
     def __init__(self) -> None:
         pass
+
+    def square()
+    
+    def cube()
+        
+    def square_root()
+        
+    def cube_root()
+        
+    def power()
+        
+    def sin()
