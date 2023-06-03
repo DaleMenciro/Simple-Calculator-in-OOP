@@ -94,23 +94,24 @@ class CalculatorApp(tk.Tk):
 
         if operation in ["Square", "Cube", "Square Root", "Cube Root"]:
             self.calculate_first_number(operation, num1)
-        try:
-            num2 = float(self.num2_entry.get())
+        else:
+            try:
+                num2 = float(self.num2_entry.get())
 
-            if operation == "Addition":
-                result = self.calculator.add(num1, num2)
-            elif operation == "Subtraction":
-                result = self.calculator.subtract(num1, num2)
-            elif operation == "Multiplication":
-                result = self.calculator.multiply(num1, num2)
-            elif operation == "Division":
-                result = self.calculator.divide(num1, num2)
-            
-            self.result_label.config(text=f"Result: {result: .2f}")
-        except ValueError: 
-            messagebox.showerror("Error", "Invalid input! Please enter a valid number.")
-        except ZeroDivisionError as e:
-            messagebox.showerror("Error", e)               
+                if operation == "Addition":
+                    result = self.calculator.add(num1, num2)
+                elif operation == "Subtraction":
+                    result = self.calculator.subtract(num1, num2)
+                elif operation == "Multiplication":
+                    result = self.calculator.multiply(num1, num2)
+                elif operation == "Division":
+                    result = self.calculator.divide(num1, num2)
+                
+                self.result_label.config(text=f"Result: {result: .2f}")
+            except ValueError: 
+                messagebox.showerror("Error", "Invalid input! Please enter a valid number.")
+            except ZeroDivisionError as e:
+                messagebox.showerror("Error", e)               
 
     def calculate_first_number (self, operation, num1):
             if operation == "Square":
