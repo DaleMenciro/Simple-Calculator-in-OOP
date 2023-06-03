@@ -102,6 +102,14 @@ class CalculatorApp(tk.Tk):
                 result = self.calculator.multiply(num1, num2)
             elif operation == "Division":
                 result = self.calculator.divide(num1, num2)
+            elif operation == "Square":
+                result = self.additional_operations.square(num1)
+            elif operation == "Cube":
+                result = self.additional_operations.cube(num1)
+            elif operation == "Square Root":
+                result = self.additional_operations.square_root(num1)
+            elif operation == "Cube Root":
+                result = self.additional_operations.cube_root(num1)
 
             self.result_label.config(text=f"Result: {result}")
         except ValueError: 
