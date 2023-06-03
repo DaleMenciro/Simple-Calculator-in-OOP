@@ -29,6 +29,7 @@ class AdditionalOperation:
     def power(self, base, exponent):
         return math.pow(base,exponent)
         
-    def sin()
+    def sin(self, angle):
+        return math.sin(math.radians(angle))
         
     
