@@ -142,7 +142,3 @@ class CalculatorApp(tk.Tk):
     def exit_program(self):
         self.destroy()
         messagebox.showinfo("Message", "Thank you for using the program!")
-
-if __name__ == "__main__":
-    app = CalculatorApp()
-    app.mainloop()
