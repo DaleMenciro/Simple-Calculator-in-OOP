@@ -14,7 +14,8 @@ class AdditionalOperation:
     def __init__(self) -> None:
         pass
 
-    def square()
+    def square(self, number):
+        return number ** 2
     
     def cube()
         
