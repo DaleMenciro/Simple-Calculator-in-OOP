@@ -79,10 +79,10 @@ class CalculatorApp(tk.Tk):
         self.clear_button.grid(row=6, column=0, sticky="NSEW")
 
         self.try_again_button = tk.Button(self, text="Try Again", command=self.try_again)
-        self.try_again_button.grid(row=6, column=1, sticky="NSEW")
+        self.try_again_button.grid(row=7, column=1, sticky="NSEW")
 
         self.exit_button = tk.Button(self, text="Exit", command=self.exit_program)
-        self.exit_button.grid(row=6, column=2, sticky="NSEW")
+        self.exit_button.grid(row=8, column=2, sticky="NSEW")
 
     def calculate(self):
         try:
