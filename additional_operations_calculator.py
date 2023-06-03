@@ -11,7 +11,7 @@ power, and sin.
 import math
 from operations_calculator import Operation
 
-class AdditionalOperation:
+class AdditionalOperation(Operation):
     def __init__(self) -> None:
         pass
 
