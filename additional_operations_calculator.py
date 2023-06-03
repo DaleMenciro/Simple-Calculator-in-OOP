@@ -11,3 +11,5 @@ power, and sin.
 import math
 
 class AdditionalOperation:
+    def __init__(self) -> None:
+        pass
