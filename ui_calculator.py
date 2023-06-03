@@ -94,7 +94,14 @@ class CalculatorApp(tk.Tk):
 
             operation = self.operation_var.get()
 
-            
+            if operation == "Addition":
+                result = self.calculator.add(num1, num2)
+            elif operation == "Subtraction":
+                result = self.calculator.subtract(num1, num2)
+            elif operation == "Multiplication":
+                result = self.calculator.multiply(num1, num2)
+            elif operation == "Division":
+                result = self.calculator.divide(num1, num2)
 
             self.result_label.config(text=f"Result: {result}")
         except ValueError: 
