@@ -13,7 +13,7 @@ from operations_calculator import Operation
 
 class AdditionalOperation(Operation):
     def __init__(self) -> None:
-        pass
+        super().__init__()
 
     def square(self, number):
         return number ** 2
