@@ -17,7 +17,8 @@ class AdditionalOperation:
     def square(self, number):
         return number ** 2
     
-    def cube()
+    def cube(self, number):
+        return number ** 3
         
     def square_root()
         
@@ -26,3 +27,5 @@ class AdditionalOperation:
     def power()
         
     def sin()
+        
+    
