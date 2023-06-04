@@ -1,10 +1,11 @@
 # Simple-Calculator-in-OOP
 
 This program is a redo of my [Simple App Calculator](https://github.com/DaleMenciro/Simple-App-Calculator) but in OOP.
-## This program is divided into three files:
+## This program is divided into four files:
     ui_calculator.py - handles the GUI of the program
     operation_calculator.py - handles the arithmetic operations.
     main_calculator.py - serves as the entry point of the program
+    additional_operations_calculator.py - handles additional arithmetic operations.
 
 1. This program will ask the user to choose one of the arithmetic operations:
 - **Addition**
